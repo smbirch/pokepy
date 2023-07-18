@@ -1,0 +1,35 @@
+{% extends 'base.html' %} {% block content %}
+
+<div
+  class="container-fluid d-flex flex-column justify-content-center align-items-center"
+  style="height: 100vh"
+>
+  <h1 class="text-center mt-5 welcome" style="margin-bottom: 5%">
+    Welcome to PokePy!
+  </h1>
+  <div
+    class="row justify-content-center align-items-center"
+    style="height: 50vh; width: 100vw"
+  >
+    <div class="col-6">
+      <div class="card bg-transparent my-card">
+        <div class="card-body text-center">
+          <div class="row mt-3 flex-column">
+            <div class="col mb-4">
+              <a href="{{ url_for("login")}}" class="btn btn-primary btn-lg btn-block"
+                >Sign In!</a
+              >
+            </div>
+            <div class="col">
+              <a href="{{ url_for("register")}}" class="btn btn-primary btn-lg btn-block"
+                >Create An Account!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

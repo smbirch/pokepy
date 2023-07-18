@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "pressstart";
+  src: url("../PressStart2P.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "pressstart";
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: stretch;
+}
+
+.base-background {
+  background-image: url(../bg.webp);
+}
+
+.edit-background {
+  background-image: url(../bgpurple.png);
+}
+
+.usercard {
+  background-color: #d4f3f1a2;
+}
+
+.welcome {
+  color: #ffcb05;
+  text-shadow: 2px 2px 2px #007bc3;
+}
+
+.btn {
+  background-color: #007bc3;
+  border-color: #4cb050;
+}
+
+.btn-primary {
+  background-color: #007bc3;
+  border-color: #ffcb05;
+}
+
+.btn-primary:hover {
+  background-color: #ffcb05 !important;
+  border-color: #ffcb05 !important;
+}
+
+.btn-primary:active {
+  background-color: #4cb050 !important;
+  border-color: #ffcb05 !important;
+}
+
+.colors {
+  color: #007bc3;
+  border-color: #ffcb05;
+}
+
+.colors:hover {
+  color: #ffcb05 !important;
+  border-color: #007bc3 !important;
+}
+
+.colors:active {
+  color: #007bc3 !important;
+  border-color: #ffcb05 !important;
+}
+
+.userhome-btn {
+  width: 85%;
+}
+
+.pokebutton {
+  width: 85%;
+}
+
+.allmons-btn {
+  width: 100%;
+}
+
+.fade-in-text {
+  animation: fadeIn 5s;
+  pointer-events: auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .card {
+    width: 100%;
+  }
+  .form-group {
+    margin: 10px;
+    font-size: 0.7rem;
+  }
+  .form-control {
+    font-size: 0.7rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  a {
+    font-size: 0.5rem;
+  }
+  .btn-primary {
+    font-size: 0.5rem;
+    padding: 10px 20px;
+  }
+  .btn-link {
+    font-size: 0.5rem;
+  }
+  .btn {
+    font-size: 0.5rem;
+    padding: 8px 16px;
+  }
+
+  .controlLinks {
+    display: none;
+  }
+}
+
+.links {
+  text-decoration: none;
+}
+
+footer {
+  font-size: 0.8rem;
+  text-align: center;
+  color: rgb(128, 128, 128);
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #ffcb05;
+  text-decoration: none;
+}
+
+.my-card {
+  outline: none;
+  border: 0;
+  background: transparent;
+}
+
+#flash-message {
+  transition: opacity 0.5s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.fade {
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  #flash-message {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+  }
+}
+
+.scroll-container {
+  max-height: 200px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list-inline-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 5px;
+  text-align: center;
+}
+
+.scroll-container {
+  max-height: 70vh;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list-inline-item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 5px;
+  text-align: center;
+  margin: 0.25rem;
+  margin-right: 0.25rem;
+}
